@@ -25,15 +25,15 @@ export const Form = () => {
   return (
     <div className='py-3 mx-[20%] rounded'>
       <input
-      className="border-2 border-blue-400 bg-transparent p-2 md:w-64 w-44 text-white placeholder-slate-300 rounded"
+      className="border-2 border-blue-400 bg-transparent p-2 md:w-64 w-[100%] text-white placeholder-slate-300 rounded"
       type="text"
-      placeholder="Enter or copy a link to short."
+      placeholder="Enter link to short"
       onChange={(event) => handleChanges(event)}
       value={link}
       required />
 
       <button
-        className="bg-blue-500 hover:bg-blue-600 hover:transition hover:animate-fade active:translate-y-1 hover:transition hover:animate-fade text-white md:px-8 px-[30%] py-3 lg:ml-4 md:ml-2 mt-3 rounded-md"
+        className="bg-blue-500 hover:bg-blue-600 hover:transition hover:animate-fade active:translate-y-1 hover:transition hover:animate-fade text-white md:px-8 px-[30%] md:py-3 py-2 lg:ml-4 md:ml-2 mt-3 rounded-md"
         onClick={async () => {
           await fetchData()
         }}
@@ -43,7 +43,7 @@ export const Form = () => {
       </button>
 
       <div className="mt-3 rounded">
-        <a href={shortenedLink} className="cursor-default hover:underline decoration-blue-500 decoration-2" target="_blank">{shortenedLink}</a>
+        <a href={shortenedLink} className="cursor-default hover:underline decoration-blue-500 decoration-2 md:text-sm text-xs" target="_blank">{link}</a>
         <CopyToClipboard text={shortenedLink}>
           <button className="border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white hover:transition hover:animate-fade font-medium px-5 py-2 ml-4 rounded-md">
             <FaCopy />
