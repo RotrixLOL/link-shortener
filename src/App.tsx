@@ -10,7 +10,7 @@ const App = () => {
       </main>
 
       <footer className="mt-8 text-md">
-        Made with <span className="ml-0 mr-1">💙</span> By <a href="https://github.com/RotrixLOL" target="_blank" className="bg-gradient-to-tr from-blue-400 to-blue-500 hover:from-blue-500 hover:to-blue-600 rounded p-1">RotrixX</a>
+        Made with <span className="ml-0 mr-1">💙</span> By <a href="https://github.com/RotrixLOL" target="_blank" className="bg-blue-500 hover:bg-blue-600 hover:transition hover:animate-fade rounded p-1">RotrixX</a>
       </footer>
     </div>
   )
