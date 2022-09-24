@@ -1,5 +1,8 @@
 /** @type {import('@jest/types).Config.InitialOptions} */
-export default config =  {
+
+const config =  {
   verbose: true,
   globalSetup: "<rootDir>/config/globalSetup.js"
 };
+
+export { config }
