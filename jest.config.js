@@ -5,4 +5,4 @@ const config =  {
   globalSetup: "<rootDir>/config/globalSetup.js"
 };
 
-export { config }
+module.exports = config
