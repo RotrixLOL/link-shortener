@@ -43,7 +43,7 @@ export const Form = () => {
       </button>
 
       <div className="mt-3 rounded">
-        <a href={shortenedLink} className="cursor-default hover:underline decoration-blue-500 decoration-2 md:text-sm text-xs" target="_blank">{link}</a>
+        <a href={shortenedLink} className="cursor-default hover:underline decoration-blue-500 decoration-2 md:text-sm text-xs" target="_blank">{shortenedLink}</a>
         <CopyToClipboard text={shortenedLink}>
           <button className="border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white hover:transition hover:animate-fade font-medium px-5 py-2 ml-4 rounded-md">
             <FaCopy />
