@@ -4,20 +4,17 @@ describe('Browser testing', () => {
     let browser
     let page
 
-    beforeAll(done => {
+    beforeAll(async () => {
         browser = await puppeeter.launch()
         page = await browser.newPage()
-        done()
     })
 
-    it('make a screenshot', done => {
+    it('make a screenshot', async () => {
         await page.goto('http://localhost:5173')
         await page.screenshot({ path: 'screenshot.png' })
-        done()
     })
 
-    afterAll(done => {
+    afterAll(async () => {
         await browser.close()
-        done()
     })
 })
