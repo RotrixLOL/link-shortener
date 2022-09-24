@@ -14,7 +14,7 @@ describe('Browser testing', () => {
         await page.screenshot({ path: 'screenshot.png' })
     })
 
-    afterAll(async () => {
-        await browser.close()
+    afterAll(() => {
+        browser.close()
     })
 })
