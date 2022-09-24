@@ -1,5 +1,7 @@
 # link shortener
 
+![Preview](https://github.com/RotrixLOL/link-shortener/blob/main/screenshot.png)
+
 My link shortener made with React, Tailwind, TypeScript and ShrinkMe API
 
 ## Installation
