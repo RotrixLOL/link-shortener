@@ -1,6 +1,6 @@
-import { setup as setupDevServer } from 'jest-dev-server'
+const { setup: setupDevServer } = require('jest-dev-server')
 
-export default globalSetup = async () => {
+module.exports = async function globalSetp() {
     await setupDevServer({
         command: 'vite --host',
         launchTimeout: 10000,
