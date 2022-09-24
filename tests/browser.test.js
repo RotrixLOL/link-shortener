@@ -1,4 +1,4 @@
-import puppeeter from 'puppeteer'
+const puppeeter = require('puppeteer')
 
 describe('Browser testing', () => {
     let browser
