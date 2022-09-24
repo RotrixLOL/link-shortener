@@ -5,8 +5,8 @@ describe('Browser testing', () => {
     let page
 
     beforeAll(done => {
-        browser = await puppeeter.launch()
-        page = await browser.newPage()
+        browser = puppeeter.launch()
+        page = browser.newPage()
         done()
     })
 
